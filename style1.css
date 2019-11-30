@@ -1,0 +1,497 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@media only screen and (min-width: 450px) {
+    .product-wrapper {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .product-wrapper {
+        width: 33.333%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .product-wrapper {
+        width: 25%;
+    }
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #266dc5;
+    color: #fff;
+}
+
+a{
+text-decoration: none;
+}
+li{
+    list-style:none;
+}
+header{
+    z-index: 1;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+}
+header .header___logo{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 800;
+    font-size:60px;
+    cursor: pointer;
+    margin-top:5px;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+header .header___l{
+text-align:center;
+font-size: 40px;
+font-weight: 500;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 15px;
+}
+nav{
+    text-align: center; 
+    width:68%;
+    height:50px;
+    top:24%;
+    left:16%;
+    right:16%;
+    margin:auto;
+    border-bottom: 2px solid #000;
+    border-top:2px solid #000;
+}
+nav  .topnav{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top:3px;
+    text-transform: uppercase;
+    
+}
+nav .topnav a{
+    color:#fff;
+    text-align: center;
+    padding: 14px 40px;
+    padding-bottom: 40px;
+    font-size:15px;
+}
+nav .topnav a:hover{
+    color:#800000;
+}
+main{
+    margin-top: 5%;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    width:68%;
+    top:60px;
+    margin-left:16%;
+    margin-right:16%;
+    height:700px;  
+}
+main .main_inv{
+    font-size: 20px;
+    font-weight: 500;
+    width:auto;
+    height:230px;
+    margin:50px ;
+    margin-top: 50px;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    border:1px solid red;
+}
+main .main_pic{
+
+ height: 600px;
+    background: url(rrtt.jpg)  center no-repeat;
+    background-size:cover;
+}
+#mid {
+width:68%;
+ margin-left:16%;
+ margin-right:16%;
+ height:100%;
+}
+#mid li{
+    display: inline;
+}
+.products {
+    list-style: none;
+    margin: 0 -0px 0 0px;
+    padding: 0;
+}
+.product {
+    display: block;
+    position: relative;
+    margin: 0 10% 10% 10%;
+    text-decoration: none;
+    color: #f4fcff;
+    z-index: 2;
+    height:900px;
+    background: #477fda;
+    border: solid 3px #070e64;
+}
+
+.product-wrapper {
+    display: block;
+    width: 15%;
+    float: right;
+    transition: width .2s;
+}
+.product-photo {
+    position: relative;
+    padding-bottom: 100%;
+    overflow: hidden;
+}
+.product-photo img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    transition: transform .4s ease-out;
+}
+.product:hover .product-photo img {
+    transform: scale(1.05);
+}
+
+.product-desc {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+    padding-left: 10px;
+    line-height: 1.4em;
+    height: 7.6em;
+    height:300px;
+    overflow-y: scroll;
+}
+.pro{
+     text-align: center;
+    text-transform: uppercase;
+}
+.product-price-old  {
+    color: #888;
+    text-decoration: line-through;
+}
+.product-name{
+    height:50px;
+    margin-left:10px;
+    color:#070e64;
+}
+.product-cost{
+    max-height: 100px;
+    color:maroon;
+    text-align: center;
+    text-transform: uppercase;
+    max-height:100px;
+    margin-top: -10px;
+}
+.button-buy{
+	position:relative;
+    margin-top: 10px;
+    margin-left: 20%;
+    margin-right: auto;
+    color: #fff;
+    font-size: 2em;
+    width:160px;
+    height:60px;
+    border-style: none;
+    background: #070e64;
+    cursor: pointer;
+}
+.col-4 {
+    width:260px;
+    margin-right: 30px;
+    float:left;
+
+}
+.footer{
+    margin-top:90%;
+    border-top: 2px solid #000;
+    padding: 15px 0 15px;
+}
+.container {
+    width:68%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon{
+    margin-left: 10px;
+    margin-right: 10px;
+    width:30px;
+    height:30px;
+    background-size:contain;
+}
+p.footer__social{
+    color:#FFF;
+}
+p.footer__social-icons{
+    color:#FFF;
+ font-size: 32px;
+}
+p.footer__social-icons a{    
+}
+.photo-right{
+    float:right;
+    width:10%;
+    width:332px;
+     height:298px; 
+     object-fit: cover;
+}
+.about{
+    font-weight: 300;
+    font-size: 25px;
+
+}
+.midh{
+    font-size: 60px;
+    text-align: center;
+    color: #8B0000
+}
+.midh2{
+    font-size:40px;
+    text-decoration: underline;
+}
+.contact{
+    font-size: 30px;
+    width:340px;
+
+}
+.map{
+    width:340px;
+    position: relative;
+    left: 400px;
+    top:-460px;
+}
+.contact input, textarea{
+    margin:5px auto;
+    width:250px;
+
+}
+ #map {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+      }
+.modal-content{
+    position:fixed;
+    left:10px;
+    top:10px;
+    right:100px;
+    bottom:10px;
+    height:580px;
+    width:1330px;
+    background: #207fc0;
+    block:display;
+    z-index:999;
+    overflow-y:scroll;
+    border:4px solid navy;
+}
+.modal-product-name{
+    position: relative;
+    color: #000;
+    margin-left: 50px;
+    margin-right:none;
+    margin-top:10px;
+}
+.modal-product-photo{
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 700px;
+}
+.modal-product-photo img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    transition: transform .4s ease-out;
+    border:3px solid black;
+}
+.modal-product-wrapper{
+    display: block;
+    width: 450px;
+    float: left;
+
+}
+.close-button{
+    position: absolute;
+    left:94%;
+    bottom: 500px;
+    width:60px;
+    font: 2em;
+    height: 50px;
+    color:white;
+    background: navy;
+    border:none;
+    cursor: pointer;;
+}
+.modal-product-desc{
+    position: relative;
+    top:60px;
+}
+.AddTS{
+font-size: 2em;
+    width:450px;
+    height: 50px;
+    color:white;
+    background: navy;
+    border:none;
+    cursor: pointer;;
+}
+.modal-product-text{
+    position:absolute;
+    top:230px;
+    width:700px;
+    left:460px;
+    color:#f4fcff;
+}
+.modal-cost{
+    color: #c62f0d;
+}
+.notification, .notification1, .notification2{
+    position: fixed;
+    left:300px;
+    right:auto;
+    top:200px;
+    width:500px;
+    height:300px;
+    background: #5a4ac5;
+    z-index:99999;
+    color:#fff;
+    border:3px solid navy;
+    padding-top:20px;
+    padding-left: 20px;
+    display: block;
+}
+.notification h1{
+    position: relative;
+    top:20px;
+    left:20px;
+}
+.close-button-ok{
+    position: relative;
+    left:80px;
+    right:auto;
+    top:35px;
+    width:120px;
+    font-size: 2.5em;
+    height: 110px;
+    color:white;
+    background: navy;
+    border:none;
+    cursor: pointer;
+}
+.authorization{
+    position: fixed;
+    left:300px;
+    right:auto;
+    top:200px;
+    width:500px;
+    height:300px;
+    background: #5a4ac5;
+    z-index:10000;
+    color:#fff;
+    border:3px solid navy;
+    padding-top:20px;
+    padding-left: 20px;
+}
+#form {
+     position: fixed;
+     top: 20px;
+     left: 200px;
+     right: auto;
+     bottom: auto;
+     border: 3px solid navy;
+     background: #5a4ac5;
+     padding: 10px;
+     width: 900px;
+     height: 550px;
+     z-index: 5900000;
+     font-size: 2em;
+ }
+#form1 {
+    position: fixed;
+    top: 20px;
+    left: 200px;
+    right: auto;
+    bottom: auto;
+    border: 3px solid navy;
+    background: #5a4ac5;
+    padding: 10px;
+    width: 900px;
+    height: 550px;
+    z-index: 5900001;
+    font-size: 2em;
+    display:none;
+}
+#form,#form1 p{
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+#form input,#form1 input{
+    font-size: 1.1em;
+}
+#form button{
+}
+.button66{
+    position: relative;
+    font-size: 1em;
+    height: 110px;
+    color:white;
+    background: navy;
+    border:none;
+    cursor: pointer;
+    width:330px;
+    left:30px;
+}
+.button666{
+    position: relative;
+    width:140px;
+    font-size: 1em;
+    height: 110px;
+    color:white;
+    background: navy;
+    border:none;
+    cursor: pointer;
+    left:400px;
+}
+.button665{
+    position: relative;
+    width:580px;
+    font-size: 1em;
+    height: 110px;
+    color:white;
+    background: navy;
+    border:none;
+    cursor: pointer;
+    top:60px;
+    left:30px;
+    right:auto;
+}
+.close-button-login{
+    position: absolute;
+    left:92%;
+    bottom: 500px;
+    width:60px;
+    font: 2em;
+    height: 50px;
+    color:white;
+    background: navy;
+    border:none;
+    cursor: pointer;
+}
